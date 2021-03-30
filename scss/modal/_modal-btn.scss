@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
 }
-.modal-btn-sub {
+.modal__btn-submit {
   /* display: flex; */
   position: absolute;
 
@@ -25,14 +25,15 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.modal-btn-sub {
+.modal__btn-submit {
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: $second-text-color;
   }
 }
 /* ===МОДАЛЬНАЯ кнопка ЗАКРЫТЬ===== */
-.close-modal-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -48,16 +49,23 @@
   /* border-color: var(--accent-color); */
 }
 
-.close-modal-button-icon {
-  position: absolute;
-  display: block;
-  align-items: center;
-  justify-items: center;
-  top: 20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+// .close-modal-button-icon {
+//   position: absolute;
+//   display: block;
+//   align-items: center;
+//   justify-items: center;
+//   top: 20px;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+.modal__close-btn {
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
 }
-.close-modal-btn {
+.modal__close-icon {
   &:focus,
   &:hover {
     fill: $accent-color;

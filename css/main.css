@@ -309,14 +309,14 @@ img {
   margin: 0;
 }
 
-.features__card {
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   display: inline;
 }
 
-.features__product {
+.card__product {
   display: block;
   background: #f5f4fa;
   height: 120px;
@@ -325,21 +325,21 @@ img {
   border-radius: 4px;
 }
 
-.featires__icon {
+.card__icon {
   margin: 0 auto;
   padding: 30px 100px;
   width: 270px;
   height: 120px;
 }
 
-.features__thumb {
+.card__thumb {
   width: 270px;
   height: 101px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.features__titel {
+.card__titel {
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -349,7 +349,7 @@ img {
   color: #212121;
 }
 
-.features__text {
+.card__text {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -891,7 +891,7 @@ img {
           transform: translate(-50%, -50%) scale(1);
 }
 
-.madal-form-title {
+.madal-form__title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -906,12 +906,12 @@ img {
   margin-top: 12px;
 }
 
-.modal-form-box {
+.modal-form__box {
   position: relative;
 }
 
 /* ===заглавие ЛЕЙБЛ== */
-.form-line-titel {
+.modal-form__label {
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -923,7 +923,7 @@ img {
 }
 
 /* ===форма ИНПУТ== */
-.modal-form-line {
+.modal-form__input {
   /* position: relative; */
   width: 100%;
   height: 40px;
@@ -943,12 +943,12 @@ img {
   color: #757575;
 }
 
-.modal-form-line:focus:not(:placeholder-shown), .modal-form-line:hover:not(:placeholder-shown) {
+.modal-form__input:focus:not(:placeholder-shown), .modal-form__input:hover:not(:placeholder-shown) {
   outline-color: #2196f3;
 }
 
 /* ===ИКОНКА ИНПУТ=== */
-.modal-form-icon {
+.modal-form__icon {
   position: absolute;
   top: 60%;
   left: 15px;
@@ -958,12 +958,12 @@ img {
   height: 14px;
 }
 
-.modal-form-icon:focus:not(:placeholder-shown), .modal-form-icon:hover:not(:placeholder-shown) {
+.modal-form__icon:focus:not(:placeholder-shown), .modal-form__icon:hover:not(:placeholder-shown) {
   fill: #2196f3;
 }
 
 /* ===ПОЛЕ ТЕКСТЕРИЯ== */
-.modal-form-line.user-text {
+.modal-form__input.user-text {
   margin: 4px 0 20px 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -985,7 +985,7 @@ img {
   margin-bottom: 50px;
 }
 
-.chek-text {
+.chek-box__text {
   /* position: absolute; */
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -996,11 +996,11 @@ img {
   color: #757575;
 }
 
-.modal-form-line:focus:not(:placeholder-shown), .modal-form-line:hover:not(:placeholder-shown) {
+.modal-form__input:focus:not(:placeholder-shown), .modal-form__input:hover:not(:placeholder-shown) {
   outline-color: #2196f3;
 }
 
-.modal-form-box:hover, .modal-form-box:focus {
+.modal-form__box:hover, .modal-form__box:focus {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -1011,7 +1011,7 @@ img {
   height: 100%;
 }
 
-.modal-btn-sub {
+.modal__btn-submit {
   /* display: flex; */
   position: absolute;
   left: 50%;
@@ -1032,13 +1032,14 @@ img {
   color: #ffffff;
 }
 
-.modal-btn-sub:hover, .modal-btn-sub:focus {
+.modal__btn-submit:hover, .modal__btn-submit:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #757575;
 }
 
 /* ===МОДАЛЬНАЯ кнопка ЗАКРЫТЬ===== */
-.close-modal-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1052,20 +1053,12 @@ img {
   /* border-color: var(--accent-color); */
 }
 
-.close-modal-button-icon {
-  position: absolute;
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  top: 20px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.modal__close-btn:focus, .modal__close-btn:hover {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 
-.close-modal-btn:focus, .close-modal-btn:hover {
+.modal__close-icon:focus, .modal__close-icon:hover {
   fill: #2196f3;
   border-color: #2196f3;
 }

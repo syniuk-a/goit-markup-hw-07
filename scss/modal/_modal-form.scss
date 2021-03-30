@@ -1,4 +1,4 @@
-.madal-form-title {
+.madal-form__title {
   font-family: $main-font;
   font-style: $text-style;
   font-weight: 700;
@@ -12,12 +12,12 @@
 .modal-form {
   margin-top: 12px;
 }
-.modal-form-box {
+.modal-form__box {
   position: relative;
 }
 
 /* ===заглавие ЛЕЙБЛ== */
-.form-line-titel {
+.modal-form__label {
   margin-bottom: 10px;
   font-family: $main-font;
   font-style: $text-style;
@@ -29,7 +29,7 @@
   color: #757575;
 }
 /* ===форма ИНПУТ== */
-.modal-form-line {
+.modal-form__input {
   /* position: relative; */
   width: 100%;
   height: 40px;
@@ -49,7 +49,7 @@
 
   color: #757575;
 }
-.modal-form-line {
+.modal-form__input {
   &:focus,
   &:hover {
     &:not(:placeholder-shown) {
@@ -58,7 +58,7 @@
   }
 }
 /* ===ИКОНКА ИНПУТ=== */
-.modal-form-icon {
+.modal-form__icon {
   position: absolute;
   top: 60%;
   left: 15px;
@@ -66,7 +66,7 @@
   width: 14px;
   height: 14px;
 }
-.modal-form-icon {
+.modal-form__icon {
   &:focus,
   &:hover {
     &:not(:placeholder-shown) {
@@ -75,7 +75,7 @@
   }
 }
 /* ===ПОЛЕ ТЕКСТЕРИЯ== */
-.modal-form-line {
+.modal-form__input {
   &.user-text {
     margin: 4px 0 20px 0;
     font-family: $main-font;
@@ -98,7 +98,7 @@
 .chek-box {
   margin-bottom: 50px;
 }
-.chek-text {
+.chek-box__text {
   /* position: absolute; */
   font-family: $main-font;
   font-style: $text-style;
@@ -109,8 +109,7 @@
 
   color: #757575;
 }
-.modal-form-line {
-  // & + .uset-text {
+.modal-form__input {
   &:focus,
   &:hover {
     &:not(:placeholder-shown) {
@@ -118,7 +117,7 @@
     }
   }
 }
-.modal-form-box {
+.modal-form__box {
   &:hover,
   &:focus {
     color: $accent-color;
