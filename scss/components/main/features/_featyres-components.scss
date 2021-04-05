@@ -8,8 +8,10 @@
   margin-right: 30px;
   /* margin: calc(-1 * var(--grid-margin)); */
 }
-.features__link:last-child {
-  margin: 0;
+.features__link {
+  &:last-child {
+    margin: 0;
+  }
 }
 .card {
   display: flex;
